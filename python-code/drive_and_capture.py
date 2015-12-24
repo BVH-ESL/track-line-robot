@@ -40,7 +40,7 @@ while( cam.isOpened() ) :
 	resized = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
 	cv2.imshow("lll",resized)
 	
-	if time.time()-start_time > 10:
+	if time.time()-start_time > 15:
 		dir_a = 0
 		dir_b = 0
 		drive_command = "("+str(speed_a*dir_a)+","+str(speed_b*dir_b)+"):"
